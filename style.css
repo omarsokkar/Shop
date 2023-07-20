@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: sans-serif ,"Rubik";
+    scroll-behavior: smooth;
+}
+
+html,
+body{
+    overflow-x: hidden;
+}
+
+.sec1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./image/Why\ is\ everyone\ buying\ gold_\ That’s\ not\ a\ great\ sign.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.glass-background{
+    width: 80%;
+    height: 90%;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.glass-background:hover{
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.header-in{
+    top: 50px;
+    position: absolute;
+}
+
+.header-in ul{
+    display: flex;
+}
+
+.header-in ul div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-in ul div a{
+    list-style-type: none;
+    color: #F6DA76;
+    padding: 0 15px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.header-in ul div hr{
+    border: 1px solid #dfb84f;
+    width: 0%;
+    visibility: hidden;
+    transition: .5s ease;
+}
+
+.header-in ul div:hover hr{
+    visibility: visible;
+    width: 75%;
+}
+
+.header-in ul div:hover a{
+    color: #dfb84f;
+}
+
+.header{
+    visibility: hidden;
+    width: 100%;
+    background-color: #F6DA76;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header ul{
+    display: flex;
+}
+
+.header ul div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header ul div a{
+    list-style-type: none;
+    color: black;
+    padding: 10px 10px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.header ul div hr{
+    border: 1px solid black;
+    width: 0%;
+    visibility: hidden;
+    transition: .5s ease;
+}
+
+header ul div:hover hr{
+    visibility: visible;
+    width: 75%;
+}
+
+.header ul div:hover a{
+    /* color: #dfb84f; */
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 85px;
+}
+
+.links hr{
+    border: 1px solid #F6DA76;
+    height: 75px;
+}
+
+.links a{
+    font-size: 40px;
+    padding: 10px 0;
+    color: #e5c966;
+    transition: .3s ease;
+}
+
+.links:hover a{
+    padding: 15px 0;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: #F6DA76;
+}
+
+.text2{
+    color: #F6DA76;
+    font-size: 65px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: -5px;
+}
+
+.text3{
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.order-now-btn{
+    background-color: #dfb84f;
+    color: black;
+    padding: 18px 30px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 50px;
+    transition: .5s ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.order-now-btn:hover{
+    box-shadow: 0 0 10px #F9C22D;
+    transform: scale(1.03);
+}
+
+@media (max-width: 1350px){
+    header ul div a{
+        padding: 0 8px;
+    }
+    .links{
+        display: flex;
+        position: absolute;
+        bottom: 25px;
+        left: auto;
+        flex-direction: row;
+    }
+    
+    .links hr{
+        height: 0;
+        width: 75px;
+    }
+    
+    .links:hover a{
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 1020px){
+    .text1{
+        font-size: 50px;
+    }
+    
+    .text2{
+        font-size: 55px;
+        margin-top: 0px;
+    }
+    
+    .text3{
+        font-size: 20.5px;
+        margin-top: 20px;
+    }
+
+    .order-now-btn{
+        padding: 16px 25px;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+    .links{
+        bottom: 50px;
+    }
+    
+    .links hr{
+        width: 65px;
+    }
+    
+    .links a{
+        font-size: 35px;
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 850px){
+    .glass-background{
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: 80%;
+    }
+
+    header ul div a{
+        padding: 0px 5px;
+        font-size: 18px;
+    }
+    
+    header ul div:hover hr{
+        width: 85%;
+    }
+
+    .text1{
+        font-size: 45px;
+    }
+    
+    .text2{
+        font-size: 45px;
+    }
+    
+    .text3{
+        font-size: 16.5px;
+    }
+
+    .order-now-btn{
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+
+    .links hr{
+        width: 65px;
+    }
+    
+    .links a{
+        font-size: 35px;
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 680px){
+    .glass-background{
+        height: 70%;
+    }
+    
+    .header-in{
+        display: none;
+    }
+
+    .header{
+        visibility: visible;
+    }
+
+    .text1{
+        font-size: 35px;
+    }
+    
+    .text2{
+        font-size: 34px;
+    }
+    
+    .text3{
+        font-size: 12.5px;
+    }
+
+    .order-now-btn{
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+
+    .links{
+        position: inherit;
+        margin-top: 50px;
+    }
+  
+    .links hr{
+        width: 50px;
+    }
+    
+    .links a{
+        font-size: 28px;
+        padding: 0 8px;
+    }
+
+    .links:hover a{
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 540px){
+    .header ul div a{
+        padding: 10px 6px;
+        font-size: 18px;
+    }
+
+    .glass-background{
+        height: 60%;
+    }
+
+    .text1{
+        font-size: 35px;
+    }
+    
+    .text2{
+        font-size: 32px;
+    }
+    
+    .text3{
+        font-size: 12px;
+    }
+
+    .order-now-btn{
+        padding: 12px 18px;
+    }
+    
+    .links hr{
+        width: 35px;
+    }
+    
+    .links a{
+        font-size: 25px;
+    }
+
+    .links:hover a{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 400px){
+    .header ul div a{
+        padding: 10px 4px;
+        font-size: 14px;
+    }
+
+    .text1{
+        font-size: 27px;
+    }
+    
+    .text2{
+        font-size: 25px;
+    }
+    
+    .text3{
+        font-size: 9px;
+    }       
+}
